@@ -210,7 +210,7 @@ namespace DefaultNamespace
 
         protected override void OnUpdate()
         {
-            EntityManager.ExclusiveEntityTransactionDependency.Complete();
+            EntityManager.ExclusiveEntityTransactionDependency.Complete(); //Remove if you want simulation to run completely separate from rendering
 
             if (EntityManager.ExclusiveEntityTransactionDependency.IsCompleted)
             {
